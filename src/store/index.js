@@ -9,10 +9,10 @@ const store = createStore(
 	composeWithDevTools(applyMiddleware(thunkMiddleware))
 );
 
-console.log(store.getState());
-
-const unsubscribe = store.subscribe(() => {
-	console.log(store.getState());
-});
+// console.log(store.getState());
+//
+// const unsubscribe = store.subscribe(() => {
+// 	console.log(store.getState());
+// });
 
 export default store;
